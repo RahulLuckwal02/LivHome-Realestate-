@@ -123,7 +123,7 @@
             </div>
           </div>
           <div class="col-md-12">
-            <button type="submit" class="btn btn-b">Search Property</button>
+            <button type="submit" class="btn btn-b" style="border-radius: 20px;color: white;">Search Property</button>
           </div>
         </div>
       </form>
@@ -177,27 +177,38 @@
 
   <!--/ Carousel Star /-->
 
-
-
   <div class="px-4 pt-5 my-5 text-center border-bottom">
-    <h1 class="display-4 fw-bold" style="margin-top: 6vh;">Searching For Home/Flats</h1>
+    <!-- Heading with responsive font size -->
+    <h1 class="display-3 fw-bold" style="margin-top: 6vh; font-family: 'Poppins', sans-serif; letter-spacing: -0.5px; line-height: 1.3; color: #343a40; 
+         font-size: calc(1.5rem + 2vw); transition: all 0.3s ease;">
+      Searching for Homes & Flats
+    </h1>
+    
+    <!-- Button Section -->
     <div class="col-lg-6 mx-auto">
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3"
-          style="color: white; text-decoration: none;border-radius: 24px;width: 143px;"><a href="property-grid.html"
-            style="color: white;"> Buy </a></button>
-        <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Rent</button> -->
+        <!-- Buy Button -->
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" style="color: white; text-decoration: none; border-radius: 30px; padding: 0.8rem 2.5rem; font-weight: 600; transition: transform 0.3s ease;">
+          <a href="property-grid.html" style="color: white;">Buy</a>
+        </button>
+        <!-- Rent Button (optional) -->
+        <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4" style="border-radius: 30px;">Rent</button> -->
       </div>
     </div>
-    <div class="overflow-hidden" style="max-height: 50vh;">
+    
+    <!-- Image Section -->
+    <div class="overflow-hidden" style="max-height: 50vh; margin-top: 2rem;">
       <div class="container px-5">
-        <img src="slider2.jpg" class="img-fluid border rounded-3 shadow-lg mb-4 pic" style="width: 113vh;
-          max-width: 101%;
-          max-height: 50vh;
-          height: auto;" alt="Example image" width="700" height="500" loading="lazy">
+        <img src="slider2.jpg" class="img-fluid border rounded-3 shadow-lg mb-4 pic " 
+          style="width: 113vh; max-width: 101%; max-height: 50vh; height: auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);" 
+          alt="Example image" loading="lazy">
       </div>
     </div>
   </div>
+  
+  
+  
+  
 
 
 
@@ -223,144 +234,130 @@
 </section> -->
 
 
- <!-- Join Us Start  -->
+<!-- Join Us Start -->
 
-  <div class="b-example-divider divider " style="height: 1rem;
-  background-color: #e9ecef;
-  border: solid #e9ecef;
-  border-width: 1px 0;
-  box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);"></div>
+<div class="b-example-divider divider" style="height: 1rem; background-color: #e9ecef; border: solid #e9ecef; border-width: 1px 0; box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);"></div>
 
-  <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-    <div class="row align-items-center g-lg-5 py-5">
-      <div class="col-lg-7 text-center text-lg-start">
-        <h1 class="display-4 fw-bold lh-1 mb-3"> Join us in this journey</h1>
-        <p class="col-lg-10 fs-4"> we create a platform for you and your loved ones to search and discover the best out
-          of the best houses/flats/pgs nearby, As we assure you the warmth to be experienced at the end of thus
-          discovery
+<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+  <div class="row align-items-center g-lg-5 py-5">
+    <!-- Left side: Heading and Description -->
+    <div class="col-lg-7 text-center text-lg-start">
+      <h1 class="display-4 fw-bold" style="margin-top: 6vh; font-family: 'Poppins', sans-serif; color: #343a40; font-size: calc(1.5rem + 2vw); letter-spacing: -0.5px; line-height: 1.3;">
+        Join us on this journey
+      </h1>
+      <p class="col-lg-10 fs-4" style="color: #6c757d; line-height: 1.6; margin-top: 1rem;">
+        Discover a platform designed for you and your loved ones to search and find the best homes, flats, or PGs nearby. We promise a warm, welcoming experience at the end of your discovery.
+        <br><br>
+        "A light is what guides you home, the warmth is what keeps you there." We're proud to be your guiding light.
+      </p>
+    </div>
+    
+    <!-- Right side: Sign Up Form -->
+    <div class="col-md-10 mx-auto col-lg-5">
+      <form class="p-4 p-md-5 border rounded-3 bg-light shadow-lg" style="transition: all 0.3s ease;">
+        <div class="form-floating mb-3">
+          <label for="floatingInput">Email address</label>
+          <input type="email" class="form-control form-control-lg" id="floatingInput" placeholder="name@example.com">
+        </div>
+        <div class="form-floating mb-3">
+          <label for="floatingPassword">Password</label>
+          <input type="password" class="form-control form-control-lg" id="floatingPassword" placeholder="Password">
+        </div>
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit" style="border-radius: 30px; padding: 0.8rem; font-weight: 600; transition: transform 0.2s ease;">
+          Sign up
+        </button>
+        <hr class="my-4">
+        <small class="text-muted">By clicking Sign up, you agree to the <a href="#" style="color: #007bff;">terms of use</a>.</small>
+      </form>
+    </div>
+  </div>
+</div>
 
-          "A light is wpasswordhat guides you home , the warmth is what keeps you there" we take all the pride to be your light
-          .</p>
+<div class="b-example-divider divider" style="height: 1rem; background-color: #e9ecef; border: solid #e9ecef; border-width: 1px 0; box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);"></div>
+
+<!-- Join Us End -->
+
+
+
+
+<!-- Services Section -->
+
+<section class="section-services section-t8">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="title-wrap d-flex justify-content-center">
+          <div class="title-box">
+            <h2 class="title-a text-center display-6">Our Services</h2>
+          </div>
+        </div>
       </div>
-      <div class="col-md-10 mx-auto col-lg-5">
-        <form class="p-4 p-md-5 border rounded-3 bg-light">
-          <div class="form-floating mb-3">
-            <label for="floatingInput">Email address</label>
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    </div>
+    <div class="row gy-4">
+      <!-- Lifestyle Card -->
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card-box-c foo">
+          <div class="card-header-c d-flex">
+            <div class="card-box-ico">
+              <span class="fa fa-gamepad fa-2x"></span>
+            </div>
+            <div class="card-title-c align-self-center">
+              <h2 class="title-c fs-5">Lifestyle</h2>
+            </div>
           </div>
-          <div class="form-floating mb-3">
-            <label for="floatingPassword">Password</label>
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <div class="card-body-c">
+            <p class="content-c fs-6">
+              <!-- Add your description here -->
+            </p>
           </div>
-          <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
+        </div>
+      </div>
+      <!-- Loans Card -->
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card-box-c foo">
+          <div class="card-header-c d-flex">
+            <div class="card-box-ico">
+              <span class="fa fa-usd fa-2x"></span>
+            </div>
+            <div class="card-title-c align-self-center">
+              <h2 class="title-c fs-5">Loans</h2>
+            </div>
           </div>
-          <button class="w-100 btn btn-lg btn-primary" type="submit" style="border-radius: 20px;">Sign up</button>
-          <hr class="my-4">
-          <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
-        </form>
+          <div class="card-body-c">
+            <p class="content-c fs-6">
+              <!-- Add your description here -->
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Sell Card -->
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card-box-c foo">
+          <div class="card-header-c d-flex">
+            <div class="card-box-ico">
+              <span class="fa fa-home fa-2x"></span>
+            </div>
+            <div class="card-title-c align-self-center">
+              <h2 class="title-c fs-5">Sell</h2>
+            </div>
+          </div>
+          <div class="card-body-c">
+            <p class="content-c fs-6">
+              <!-- Add your description here -->
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+</section>
+<!-- Services Section End -->
 
-  <div class="b-example-divider divider"></div>
-  </header>
-  <div class="b-example-divider divider " style="height: 1rem;
-  background-color: #e9ecef;
-  border: solid #e9ecef;
-  border-width: 1px 0;
-  box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);"></div>
-
-  <!--/ Join Us End/-->
-
-  <!--/ Services Star /-->
-  <section class="section-services section-t8">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="title-wrap d-flex justify-content-between">
-            <div class="title-box">
-              <h2 class="title-a">Our Services</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card-box-c foo">
-            <div class="card-header-c d-flex">
-              <div class="card-box-ico">
-                <span class="fa fa-gamepad"></span>
-              </div>
-              <div class="card-title-c align-self-center">
-                <h2 class="title-c">Lifestyle</h2>
-              </div>
-            </div>
-            <div class="card-body-c">
-              <p class="content-c">
-
-              </p>
-            </div>
-            <!-- <div class="card-footer-c">
-              <a href="#" class="link-c link-icon">
-                Read more
-                <span class="ion-ios-arrow-forward"></span>
-              </a>
-            </div> -->
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box-c foo">
-            <div class="card-header-c d-flex">
-              <div class="card-box-ico">
-                <span class="fa fa-usd"></span>
-              </div>
-              <div class="card-title-c align-self-center">
-                <h2 class="title-c">Loans</h2>
-              </div>
-            </div>
-            <div class="card-body-c">
-              <p class="content-c">
-
-              </p>
-            </div>
-            <!-- <div class="card-footer-c">
-              <a href="#" class="link-c link-icon">
-                 read more
-                <span class="ion-ios-arrow-forward"></span>
-              </a>
-            </div> -->
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box-c foo">
-            <div class="card-header-c d-flex">
-              <div class="card-box-ico">
-                <span class="fa fa-home"></span>
-              </div>
-              <div class="card-title-c align-self-center">
-                <h2 class="title-c">Sell</h2>
-              </div>
-            </div>
-            <div class="card-body-c">
-              <p class="content-c">
-
-              </p>
-            </div>
-            <!-- <div class="card-footer-c">
-              <a href="#" class="link-c link-icon">
-                Read more
-                <span class="ion-ios-arrow-forward"></span>
-              </a>
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ Services End /-->
 
   <!--/ Property Star /-->
   <section class="section-property section-t8">
